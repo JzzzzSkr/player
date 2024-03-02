@@ -1,0 +1,39 @@
+.mainWrapper {
+  //   background-color: paleturquoise;
+  // height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  flex: 1;
+  padding-top: 2em;
+
+  .ant-tabs-top > .ant-tabs-nav:before {
+    border-bottom: transparent;
+  }
+
+  .search-bar {
+    max-width: 50%; // Limiting the search bar's width to half of its container
+  }
+
+  .SearchIcon {
+    color: gray; // Sets the color of the search icon
+  }
+
+  .inactive-tab {
+    color: rgb(64, 64, 64); // Color for inactive tabs
+  }
+
+  .active-tab {
+    color: white; // Color for the active tab
+  }
+}
+
+.ant-tabs,
+.ant-tabs-content-holder,
+.ant-tabs-content {
+  height: 100%;
+  overflow: auto;
+}
+
+.ant-tabs-tabpane {
+  height: 100%;
+}
