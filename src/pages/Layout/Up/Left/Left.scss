@@ -1,0 +1,19 @@
+.leftWrapper {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100%;
+
+  // background-color: palegoldenrod;
+  .nav {
+    padding: 2vh;
+    flex: 1;
+  }
+}
+
+@media (max-width: 950px) {
+  .LeftWrapper {
+    display: none;
+  }
+}

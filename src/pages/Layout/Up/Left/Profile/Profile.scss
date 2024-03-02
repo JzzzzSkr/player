@@ -1,0 +1,47 @@
+.profileWrapper {
+  margin-top: 2vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .userHeader {
+    // background-color: palegreen;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    overflow: hidden;
+
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .userName {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .git {
+      border-radius: 10%;
+      width: 4em;
+      padding: 3px;
+      background-color: black;
+      margin-top: 0.5em;
+      text-decoration: none;
+      color: white;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  
+}

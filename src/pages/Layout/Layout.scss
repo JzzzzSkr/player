@@ -1,0 +1,21 @@
+.layoutWrapper {
+  width: 90vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  height: 90vh;
+  border-radius: 20px;
+
+//   padding: 2vh;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (max-width: 512px) {
+  .layoutWrapper {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
