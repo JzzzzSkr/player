@@ -4,7 +4,7 @@ import "./PlayerRight.scss";
 const PlayerRight = () => {
   return (
     <div className="playerRightWrapper">
-      1
+      
     </div>
   );
 };

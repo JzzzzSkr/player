@@ -1,13 +1,21 @@
 import React from "react";
 import "./PlayerLeft.scss";
+import useStore from "../../../../store";
 
 const PlayerLeft = () => {
+  const {  currentSong  } = useStore();
+
+  // 如果 currentSong 为 null，不渲染任何内容
+  if (!currentSong) {
+    return null;
+  }
+
   return (
     <div className="playerLeftWrapper">
-      <img src="./assets/rec7.jpg" alt="" />
+      <img src={currentSong.img || ""} alt={currentSong.title || "Song Title"} />
       <div className="songinfo">
-        <h3>只因你太美</h3>
-        <span>ji</span>
+        <h3>{currentSong.title}</h3>
+        <span>{currentSong.singer || "Artist Name"}</span>
       </div>
     </div>
   );
