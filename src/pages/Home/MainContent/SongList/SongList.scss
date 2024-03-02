@@ -1,0 +1,36 @@
+.songlistWrapper {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  .list {
+    .songbox {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: palegreen;
+        color: rgb(207, 207, 207);
+        img {
+          height: 40px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+
+        .songename {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    hr {
+      margin: 0.5em 5em;
+      background-color: rgb(121, 121, 121);
+    }
+  }
+}

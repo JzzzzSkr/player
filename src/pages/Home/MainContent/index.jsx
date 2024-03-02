@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./MainContent.scss";
-import { Tabs } from "antd"
+import { Tabs } from "antd";
 import SongList from "./SongList/SongList";
 import MovieList from "./MovieList/MovieList";
 
@@ -8,7 +8,7 @@ const MainContent = () => {
   const [activeKey, setActiveKey] = useState("1");
 
   const onChange = (key) => {
-    console.log(key);
+    // console.log(key);
     setActiveKey(key);
   };
 
