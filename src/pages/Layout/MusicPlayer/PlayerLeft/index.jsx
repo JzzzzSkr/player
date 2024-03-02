@@ -5,9 +5,8 @@ import useStore from "../../../../store";
 const PlayerLeft = () => {
   const {  currentSong  } = useStore();
 
-  // 如果 currentSong 为 null，不渲染任何内容
   if (!currentSong) {
-    return null;
+    return <div className="playerLeftWrapper"></div>;
   }
 
   return (

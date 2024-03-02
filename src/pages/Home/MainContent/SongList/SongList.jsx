@@ -31,7 +31,7 @@ const SongList = () => {
                 <span>{item.singer}</span>
               </div>
               <div>
-                <span>{item.duration}</span>
+                <span>{item.time}</span>
               </div>
               <div
                 onClick={() =>

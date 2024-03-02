@@ -4,6 +4,7 @@ import Up from "./Up/Up";
 import MusicPlayer from "./MusicPlayer/MusicPlayer";
 
 const Layout = () => {
+  
   return (
     <div className="layoutWrapper">
       <Up></Up>

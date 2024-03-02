@@ -4,4 +4,45 @@
   height: 100%;
   background-color: palegoldenrod;
   background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    li {
+      width: 100%;
+      // background-color: black;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+
+    }
+
+    .line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .progress-bar-background {
+        width: 50%;
+        height: 2px;
+        background-color: #e0e0e0;
+
+        .progress-bar-foreground {
+          height: 100%;
+          background-color: #737373;
+        }
+      }
+
+      span{
+        padding: 0 1em;
+        font-size: 12px;
+      }
+    }
+  }
 }
