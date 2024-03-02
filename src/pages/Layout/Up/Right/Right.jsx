@@ -1,10 +1,11 @@
 import React from 'react';
 import './Right.scss';
+import { Outlet } from 'react-router-dom';
 
 const Right = () => {
     return (
         <div className='rightWrapper'>
-            <div style={{height:'200000px'}}>1</div>
+            <Outlet></Outlet>
         </div>
     );
 }

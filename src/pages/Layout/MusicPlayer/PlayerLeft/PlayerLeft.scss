@@ -1,0 +1,25 @@
+.playerLeftWrapper {
+  width: 220px;
+  height: 100%;
+  //   background-color: palegreen;
+  display: flex;
+  .songinfo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+
+    h3 {
+      font-weight: 400;
+      font-size: 15px;
+    }
+
+    span {
+      color: rgb(108, 108, 108);
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
+}
