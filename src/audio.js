@@ -23,4 +23,12 @@ exports.songsdata = [
     url: "./assets/music/3.mp3",
     time: "04:59",
   },
+  {
+    id: "3",
+    title: "Love the way you lie",
+    singer: "Rihanna & Eminem",
+    img: "./assets/rec7.jpg",
+    url: "./assets/music/4.mp3",
+    time: "04:54",
+  },
 ];

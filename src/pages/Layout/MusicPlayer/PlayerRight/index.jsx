@@ -53,15 +53,22 @@ const PlayerRight = () => {
 
   const moveToNextSong = () => {
     if (currentSong) {
-      const currentIndex = currentSong.id;
-      const nextIndex = (currentIndex + 1) % songsdata.length; // 使用取余操作符来循环列表
+      // 首先找到当前歌曲在songsdata数组中的索引
+      const currentIndex = songsdata.findIndex(
+        (song) => song.id === currentSong.id
+      );
+
+      // 计算下一首歌曲的索引，使用取余操作符来实现循环
+      const nextIndex = (currentIndex + 1) % songsdata.length;
+
+      // 使用下一首歌曲的索引来设置新的当前歌曲
       setCurrentSong(songsdata[nextIndex]);
     }
   };
 
   const handleProgressBarClick = (e) => {
-    if (!audioRef.current) return; // 确保audio元素已经挂载
-    if (!currentSong) return; // 确保有歌曲被选中
+    if (!audioRef.current) return; 
+    if (!currentSong) return;
 
     const progressBar = progressBarRef.current; // 进度条的引用
     const clickPosition =
@@ -77,6 +84,20 @@ const PlayerRight = () => {
     const paddedSeconds = remainingSeconds.toString().padStart(2, "0");
     return `${minutes}:${paddedSeconds}`;
   };
+
+  const handlePrev = () => {
+    if (currentSong) {
+      // 首先找到当前歌曲在songsdata数组中的索引
+      const currentIndex = songsdata.findIndex(song => song.id === currentSong.id);
+  
+      // 当currentIndex为0时，currentIndex - 1为-1，通过添加songsdata.length并取余，可以正确地跳转到列表的最后一首歌
+      const prevIndex = (currentIndex - 1 + songsdata.length) % songsdata.length;
+  
+      // 使用前一首歌曲的索引来设置新的当前歌曲
+      setCurrentSong(songsdata[prevIndex]);
+    }
+  };
+  
 
   if (!currentSong) {
     return (
@@ -109,6 +130,7 @@ const PlayerRight = () => {
           <div className="playerBtn">
             <SkipPreviousIcon
               style={{ marginRight: "1em", fontSize: "30px" }}
+              onClick={handlePrev}
             />
             {isPlaying ? (
               <PauseCircleIcon
@@ -121,7 +143,10 @@ const PlayerRight = () => {
                 onClick={handlePlayPause}
               />
             )}
-            <SkipNextIcon style={{ marginLeft: "1em", fontSize: "30px" }} />
+            <SkipNextIcon
+              style={{ marginLeft: "1em", fontSize: "30px" }}
+              onClick={moveToNextSong}
+            />
           </div>
         </li>
         <li className="line">
