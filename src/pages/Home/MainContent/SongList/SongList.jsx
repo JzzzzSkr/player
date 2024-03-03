@@ -2,12 +2,13 @@ import React from "react";
 import "./SongList.scss";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import PauseCircleOutlineIcon from "@mui/icons-material/PauseCircleOutline";
-import useStore from "../../../../store"; // 假设 store.js 和 SongList 组件在同一个目录下
+import useStore from "../../../../store"; 
 import { songsdata } from "../../../../audio";
 import { useEffect } from "react";
 
 const SongList = () => {
-  const { isPlaying, currentSong, togglePlay, setCurrentSong } = useStore();
+  const { isPlaying, currentSong, togglePlay, setCurrentSong, songList } =
+    useStore();
 
   useEffect(() => {
     console.log("isPlaying changed to:", isPlaying);
@@ -20,7 +21,7 @@ const SongList = () => {
   return (
     <div className="songlistWrapper">
       <ul className="list">
-        {songsdata.map((item, index) => (
+        {songList.map((item, index) => (
           <React.Fragment key={index}>
             <li className="songbox">
               <div className="songpic">

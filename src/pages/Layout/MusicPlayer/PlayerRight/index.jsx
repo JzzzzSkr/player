@@ -8,7 +8,7 @@ import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
 import { songsdata } from "../../../../audio";
 
 const PlayerRight = () => {
-  const { isPlaying, togglePlay, setCurrentSong, currentSong, songList } =
+  const { isPlaying, togglePlay, setCurrentSong, currentSong } =
     useStore();
   const audioRef = useRef(null);
   const progressBarRef = useRef(null);
