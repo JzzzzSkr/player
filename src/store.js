@@ -9,6 +9,11 @@ const useStore = create((set) => ({
   movieList: moviesdata,
   activeKey: "1",
   currentMovie: null,
+  historySet: [],
+  addHistoryItem: (item) =>
+    set((state) => ({
+      historySet: [...state.historySet, item],
+    })),
   setCurrentMovie: (movie) => set({ currentMovie: movie }),
   setActiveKey: (key) => set({ activeKey: key }),
   togglePlay: () => set((state) => ({ isPlaying: !state.isPlaying })),

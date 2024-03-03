@@ -8,7 +8,7 @@ import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
 import { songsdata } from "../../../Home/MainContent/SongList/audio";
 
 const PlayerRight = () => {
-  const { isPlaying, togglePlay, setCurrentSong, currentSong } =
+  const { isPlaying, togglePlay, setCurrentSong, currentSong, addHistoryItem } =
     useStore();
   const audioRef = useRef(null);
   const progressBarRef = useRef(null);
@@ -47,6 +47,7 @@ const PlayerRight = () => {
   // Toggle play or pause
   const handlePlayPause = () => {
     if (currentSong) {
+      
       togglePlay();
     }
   };
@@ -54,6 +55,9 @@ const PlayerRight = () => {
   // Move to the next song in the list
   const moveToNextSong = () => {
     if (currentSong) {
+      // 你觉得这个代码应该什么时候插入是最合适的
+      addHistoryItem(currentSong);
+
       const currentIndex = songsdata.findIndex(
         (song) => song.id === currentSong.id
       );
