@@ -21,25 +21,29 @@
       display: flex;
       align-content: center;
       justify-content: center;
-
     }
 
     .line {
       display: flex;
       align-items: center;
       justify-content: center;
+
       .progress-bar-background {
         width: 50%;
-        height: 2px;
+        height: 3px;
         background-color: #e0e0e0;
 
         .progress-bar-foreground {
           height: 100%;
           background-color: #737373;
         }
+
+        &:hover {
+          cursor: pointer;
+        }
       }
 
-      span{
+      span {
         padding: 0 1em;
         font-size: 12px;
       }
