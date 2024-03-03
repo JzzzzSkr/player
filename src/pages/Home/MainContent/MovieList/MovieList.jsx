@@ -1,12 +1,15 @@
 import React from "react";
 import "./MovieList.scss";
 import { moviesdata } from "./movies";
+import useStore from "../../../../store";
 
 const MovieList = () => {
+  const { movieList, setMovieList } = useStore();
+  
   return (
     <div className="movieListWrapper">
       <div className="box main">
-        {moviesdata.map((movie) => {
+        {movieList.map((movie) => {
           return (
             <div className="child-box" key={movie.id}>
               <a href="#movie">

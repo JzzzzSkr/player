@@ -3,13 +3,14 @@ import "./MainContent.scss";
 import { Tabs } from "antd";
 import SongList from "./SongList/SongList";
 import MovieList from "./MovieList/MovieList";
+import useStore from "../../../store";
 
 const MainContent = () => {
-  const [activeKey, setActiveKey] = useState("1");
+  const { activeKey, setActiveKey } = useStore();
 
   const onChange = (key) => {
-    // console.log(key);
     setActiveKey(key);
+    console.log("后来key" + activeKey);
   };
 
   const tabItems = [
@@ -37,7 +38,7 @@ const MainContent = () => {
   return (
     <div className="mainWrapper">
       <Tabs
-        defaultActiveKey="1"
+        defaultActiveKey={activeKey}
         onChange={onChange}
         tabBarStyle={{ borderBottom: "none" }}
         items={tabItems}
