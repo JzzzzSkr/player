@@ -1,7 +1,8 @@
 .movieWrapper {
   background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
-
+  border-radius: 5px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;

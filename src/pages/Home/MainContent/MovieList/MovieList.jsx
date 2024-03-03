@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./MovieList.scss";
 import { moviesdata } from "./movies";
 import useStore from "../../../../store";
 
 const MovieList = () => {
-  const { movieList, setMovieList } = useStore();
-  
+  const { movieList, setMovieList, setCurrentMovie, currentMovie } = useStore();
+
+  const handleMovieClick = (movie) => {
+    setCurrentMovie(movie);
+  };
+
+  useEffect(() => {
+    console.log(currentMovie);
+  }, [currentMovie]);
+
   return (
     <div className="movieListWrapper">
       <div className="box main">
         {movieList.map((movie) => {
           return (
-            <div className="child-box" key={movie.id}>
+            <div
+              className="child-box"
+              key={movie.id}
+              onClick={() => handleMovieClick(movie)}
+            >
               <a href="#movie">
                 <img src={movie.img} alt={movie.name + "poster"} />
                 <div className="down">
