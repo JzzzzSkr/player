@@ -1,12 +1,8 @@
-import React from 'react';
-import './Movie.scss'
+import React from "react";
+import "./Movie.scss";
 
 const Movie = () => {
-    return (
-        <div>
-            Movie
-        </div>
-    );
-}
+  return <div className="movieWrapper">You haven't select a movie yet !</div>;
+};
 
 export default Movie;

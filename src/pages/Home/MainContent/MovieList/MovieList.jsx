@@ -1,8 +1,9 @@
 import React from 'react';
+import './MovieList.scss'
 
 const MovieList = () => {
     return (
-        <div>
+        <div className='movieListWrapper'>
             Movie list
         </div>
     );
