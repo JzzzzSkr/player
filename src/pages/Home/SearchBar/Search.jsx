@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Search.scss";
 import SearchIcon from "@mui/icons-material/Search";
 import useStore from "../../../store";
-import { songsdata } from "../../../audio";
+import { songsdata } from "../MainContent/SongList/audio";
 
 const Search = () => {
   const { setSongList } = useStore();

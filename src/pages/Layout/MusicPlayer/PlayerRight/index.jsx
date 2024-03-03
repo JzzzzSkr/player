@@ -5,7 +5,7 @@ import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
 import PauseCircleIcon from "@mui/icons-material/PauseCircle";
 import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
-import { songsdata } from "../../../../audio";
+import { songsdata } from "../../../Home/MainContent/SongList/audio";
 
 const PlayerRight = () => {
   const { isPlaying, togglePlay, setCurrentSong, currentSong } =

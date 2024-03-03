@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { songsdata } from "./audio";
+import { songsdata } from "./pages/Home/MainContent/SongList/audio";
 
 const useStore = create((set) => ({
   isPlaying: false,
