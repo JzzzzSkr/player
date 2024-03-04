@@ -1,10 +1,12 @@
 .movieListWrapper {
+  // display: flex;
+  // justify-content: center;
   .main {
     display: grid;
     grid-template-rows: repeat(auto-fit, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
-    justify-content: space-around;
+    // justify-content: space-around;
 
     margin: 0;
   }
@@ -63,3 +65,9 @@
   }
 }
 
+@media (max-width: 500px) {
+  .movieListWrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
