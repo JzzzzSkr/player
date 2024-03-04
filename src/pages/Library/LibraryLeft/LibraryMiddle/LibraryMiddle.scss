@@ -1,0 +1,22 @@
+.lMiddleWrapper {
+  flex: 3;
+//   background-color: papayawhip;
+//   margin: 1em 0;
+
+  background-image: url("../../../../../public/assets/kiki1.png");
+  background-color: papayawhip;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  p{
+    width: 60%;
+    margin-top: 5em;
+  }
+}

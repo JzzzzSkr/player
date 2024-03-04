@@ -1,0 +1,58 @@
+.lBottomWrapper {
+  flex: 3;
+  //   background-color: plum;
+
+  .recommendWrapper {
+    flex: 3;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    overflow-x: auto;
+    // 滚动条的高度能定义吗
+    width: 55vw;
+  }
+  ::-webkit-scrollbar {
+    height: 3px; /* 设置滚动条的高度 */
+  }
+  .recommendWrapper ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .recommendWrapper li {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .momentBox {
+    width: auto;
+    margin-top: 1em;
+    margin-right: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+
+  .list-item {
+    width: 5em;
+    height: inherit;
+    margin-bottom: 1em;
+    text-overflow: ellipsis;
+    transition: transform 0.3s ease; /* 添加平滑变换效果 */
+    overflow: hidden; /* 防止放大后的内容溢出容器 */
+  }
+
+  .name {
+    width: 8em;
+    height: 3em;
+    // background-color: palegoldenrod;
+    font-size: 12px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+}

@@ -1,4 +1,8 @@
 .libraryLeftWrapper{
     flex: 8;
-    background-color: paleturquoise;
+    // background-color: paleturquoise;
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
 }

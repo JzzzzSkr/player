@@ -1,0 +1,20 @@
+.lTopWrapper {
+  flex: 3;
+//   background-color: palevioletred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1em;
+
+  .kiki {
+    position: absolute;
+    top: 44px;
+    left: 36px;
+    width: 5em;
+    height: inherit;
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+}

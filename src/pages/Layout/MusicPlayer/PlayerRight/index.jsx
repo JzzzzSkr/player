@@ -47,7 +47,6 @@ const PlayerRight = () => {
   // Toggle play or pause
   const handlePlayPause = () => {
     if (currentSong) {
-      
       togglePlay();
     }
   };
