@@ -11,7 +11,7 @@ const MovieList = () => {
   };
 
   useEffect(() => {
-    console.log(currentMovie);
+    // console.log(currentMovie);
   }, [currentMovie]);
 
   return (

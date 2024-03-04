@@ -9,7 +9,7 @@ const Search = () => {
   const { setSongList, activeKey, movieList, setMovieList } = useStore();
   const [searchTerm, setSearchTerm] = useState("");
 
-  console.log(activeKey);
+  // console.log(activeKey);
   // 假如activeKey是1，那么就是songlist搜索，如果是activeKey是2，那么就是movielist搜索
   const handleInputChange = (e) => {
     const term = e.target.value;

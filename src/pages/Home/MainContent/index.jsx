@@ -10,7 +10,7 @@ const MainContent = () => {
 
   const onChange = (key) => {
     setActiveKey(key);
-    console.log("后来key" + activeKey);
+    // console.log("后来key" + activeKey);
   };
 
   const tabItems = [

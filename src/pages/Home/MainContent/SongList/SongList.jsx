@@ -3,7 +3,7 @@ import "./SongList.scss";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import PauseCircleOutlineIcon from "@mui/icons-material/PauseCircleOutline";
 import useStore from "../../../../store"; 
-import { songsdata } from "./audio";
+// import { songsdata } from "./audio";
 import { useEffect } from "react";
 
 const SongList = () => {
@@ -11,11 +11,11 @@ const SongList = () => {
     useStore();
 
   useEffect(() => {
-    console.log("isPlaying changed to:", isPlaying);
+    // console.log("isPlaying changed to:", isPlaying);
   }, [isPlaying]);
 
   useEffect(() => {
-    console.log("currentSong changed to:", currentSong);
+    // console.log("currentSong changed to:", currentSong);
   }, [currentSong]);
 
   return (
