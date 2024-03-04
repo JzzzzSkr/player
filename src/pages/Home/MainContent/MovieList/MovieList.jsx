@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "./MovieList.scss";
-import { moviesdata } from "./movies";
+// import { moviesdata } from "./movies";
 import useStore from "../../../../store";
 
 const MovieList = () => {
-  const { movieList, setMovieList, setCurrentMovie, currentMovie } = useStore();
+  const { movieList, setCurrentMovie, currentMovie } = useStore();
 
   const handleMovieClick = (movie) => {
     setCurrentMovie(movie);

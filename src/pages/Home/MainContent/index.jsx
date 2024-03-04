@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./MainContent.scss";
 import { Tabs } from "antd";
 import SongList from "./SongList/SongList";
