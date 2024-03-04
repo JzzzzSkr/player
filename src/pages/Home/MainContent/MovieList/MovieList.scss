@@ -4,7 +4,7 @@
     grid-template-rows: repeat(auto-fit, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
-    justify-content: space-between;
+    justify-content: space-around;
 
     margin: 0;
   }
@@ -62,3 +62,4 @@
     }
   }
 }
+

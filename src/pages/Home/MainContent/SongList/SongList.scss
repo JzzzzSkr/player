@@ -9,7 +9,6 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      
 
       .songpic {
         display: flex;
@@ -25,6 +24,7 @@
         // background-color: palegreen;
         // background-color: palegoldenrod;
         color: rgb(207, 207, 207);
+        height: 40px;
         img {
           height: 40px;
           margin-top: 5px;
@@ -34,7 +34,6 @@
         .songename {
           margin-left: 10px;
         }
-        
       }
     }
 
@@ -42,5 +41,25 @@
       margin: 0.5em 3em;
       background-color: rgb(121, 121, 121);
     }
+  }
+}
+
+@media (max-width: 783px) {
+  .songlistWrapper .list .songbox div img {
+    display: none;
+  }
+}
+
+@media (max-width: 624px) {
+  .songlistWrapper .list .songbox .singer {
+    display: none;
+  }
+
+  .songlistWrapper .list .songbox  .songpic{
+    justify-content: center;
+  }
+
+  .songlistWrapper .list .songbox .time {
+    display: none;
   }
 }

@@ -28,11 +28,11 @@ const SongList = () => {
                 <img src={item.img} alt="" />
                 <span className="songename">{item.title}</span>
               </div>
-              <div>
+              <div className="singer">
                 <span>{item.singer}</span>
               </div>
-              <div>
-                <span>{item.time}</span>
+              <div className="time">
+                <span >{item.time}</span>
               </div>
               <div
                 onClick={() =>
