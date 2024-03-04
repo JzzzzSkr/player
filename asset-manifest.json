@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/player/static/css/main.05c147f0.css",
+    "main.js": "/player/static/js/main.281263f3.js",
+    "static/media/kiki1.png": "/player/static/media/kiki1.b84a758c87b06c2f363a.png",
+    "static/media/backgroundImg.jpg": "/player/static/media/backgroundImg.5f1451a696078c3386ad.jpg",
+    "index.html": "/player/index.html",
+    "main.05c147f0.css.map": "/player/static/css/main.05c147f0.css.map",
+    "main.281263f3.js.map": "/player/static/js/main.281263f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05c147f0.css",
+    "static/js/main.281263f3.js"
+  ]
+}
